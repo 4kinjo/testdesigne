@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="background">
+
+        <header>
+            <div id="htext">
+                <span>M</span><span>E</span><span>I</span><span>O</span><span>
+                </span><span>S</span><span>T</span><span>D</span><span>I</span><span>O</span>
+            </div>
+        </header>
+
+        <div id="articles-head">
+            <div id="articles-head-text">
+                <span>A</span>rticles
+            </div>
+        </div>
+
+        <div id="articles">
+
+            <div class="item">
+                <div class="image">
+                    <img src="image/rfid.jpg" alt="nfcのシール">
+                </div>
+                <div class="text">
+                    <div class="article-title">
+                        ジェスチャーでパソコン操作<br>[Python][MediaPipe]
+                    </div>
+                    <div class="article-profile">
+                        Pythonに慣れるための練習にもなりそう。結構簡単にすごい機能が作れちゃいます。
+                    </div>
+                </div>
+                <div class="timestamp">
+                    2023/08/08
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="image/rfid.jpg" alt="nfcのシール">
+                </div>
+                <div class="text">
+                    <div class="article-title">
+                        ジェスチャーでパソコン操作<br>[Python][MediaPipe]
+                    </div>
+                    <div class="article-profile">
+                        Pythonに慣れるための練習にもなりそう。結構簡単にすごい機能が作れちゃいます。
+                    </div>
+                </div>
+                <div class="timestamp">
+                    2023/08/08
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="image">
+                    <img src="image/rfid.jpg" alt="nfcのシール">
+                </div>
+                <div class="text">
+                    <div class="article-title">
+                        人類社会のすべての構成員の固有の尊厳
+                    </div>
+                    <div class="article-profile">
+                        と平等で譲ることのできない権利とを承認することは、世界における自由、正義及び平和の基礎であるので、
+                    </div>
+                </div>
+                <div class="timestamp">
+                    2023/08/08
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="image/rfid.jpg" alt="nfcのシール">
+                </div>
+                <div class="text">
+                    <div class="article-title">
+                        人類社会のすべての構成員の固有の尊厳
+                    </div>
+                    <div class="article-profile">
+                        と平等で譲ることのできない権利とを承認することは、世界における自由、正義及び平和の基礎であるので、
+                    </div>
+                </div>
+                <div class="timestamp">
+                    2023/08/08
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="aa">
+        <pre>
+.             _,,..,,,,_
+　　 / ,' 3　　 `ヽｰっ
+　　l　　 ⊃　⌒_つ
+　　 `ｰｰ---‐'''''"
+        </pre>
+    </div>
+
+
+
+</body>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+    @font-face {
+        font-family: 'HeaderFont';
+        src: url('./font/DotGothic16-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: "Saitamaar";
+        src: url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff2") format("woff2"),
+            url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff") format("woff"),
+            url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.ttf") format("ttf");
+        font-display: swap;
+    }
+
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    body {
+        background-color: #a3a3a3;
+        background-image: linear-gradient(0deg, #dddddd 0%, #dddddd 1.8vh, transparent 1px),
+            linear-gradient(90deg, #dddddd 0%, #dddddd 1.8vh, transparent 1px);
+        background-size: 2vh 2vh;
+        background-attachment: fixed;
+        padding-bottom: 30%;
+    }
+
+    header {
+        width: 100%;
+        height: 10%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header #htext {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 2em;
+        color: white;
+        background-color: black;
+    }
+
+    span {
+        font-family: 'HeaderFont';
+    }
+
+    /*画像を正方形に表示するために.articles付近ではwidth, 横margin, 横paddingは基本的にvwで指定しています。*/
+
+    #articles-head {
+        width: 95vw;
+        height: 10%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        margin-left: 2.5vw;
+        display: flex;
+        align-items: center;
+    }
+
+    #articles-head-text {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.25em;
+        font-family: 'HeaderFont';
+        color: white;
+        background-color: black;
+    }
+
+    img {
+        width: 42.5vw;
+        height: 42.5vw;
+    }
+
+    #articles {
+        width: 95vw;
+        height: fit-content;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 2.5vw;
+    }
+
+    .item {
+        width: 100%;
+        height: 42.5vw;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    .image {
+        width: 42.5vw;
+        height: 100%;
+        float: left;
+    }
+
+    .text {
+        width: 52.5vw;
+        height: 100%;
+        float: left;
+    }
+
+    .article-title {
+        width: 90%;
+        height: fit-content;
+        padding: 5%;
+        font-size: 4.25vw;
+        font-weight: bold;
+        color: white;
+    }
+
+    .article-profile {
+        width: 90%;
+        height: fit-content;
+        padding: 5%;
+        font-size: 3.25vw;
+        color: white;
+    }
+
+    .timestamp {
+        text-align: right;
+        font-size: 2.5vw;
+        font-family: 'HeaderFont';
+
+    }
+
+    #aa {
+        margin-top: 20%;
+        font-family: 'Saitamaar';
+        width: fit-content;
+        height: fit-content;
+
+    }
+</style>
+
+<script>
+
+    function flashHeader() {
+        var spans = document.querySelectorAll("#htext span");
+        var index = 0;
+        //【キモ注意】
+        var interval = setInterval(function () {
+            if (index > 0) {
+                spans[index - 1].style.color = "white";
+            } else {
+                spans[9].style.color = "white";
+            }
+            if (index == 5) {
+                spans[3].style.color = "white";
+            }
+
+            spans[index].style.color = "#cffc03";
+            index++;
+
+            if (index == 4) {
+                index++;
+            }
+            if (index == 10) {
+                index = 0;
+            }
+        }, 750);
+    };
+
+    function flashArticleHead() {
+        var span = document.querySelectorAll("#articles-head-text span")
+        var p = true;
+
+        var interval = setInterval(function () {
+            if (p == true) {
+                span[0].style.color = "#cffc03";
+                p = false;
+            }
+            else {
+                span[0].style.color = "white";
+                p = true;
+            }
+        }, 750);
+    };
+
+    flashHeader();
+    flashArticleHead();
+
+</script>
+
+</html>
